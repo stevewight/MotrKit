@@ -8,8 +8,6 @@
 
 #import "ZLAppDelegate.h"
 
-#import "ZLMasterViewController.h"
-
 @implementation ZLAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -19,9 +17,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    ZLMasterViewController *controller = (ZLMasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 							

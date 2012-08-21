@@ -16,8 +16,9 @@
 		D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D015E332620083043C /* ZLAppDelegate.m */; };
 		D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D143D7D215E332620083043C /* MainStoryboard.storyboard */; };
 		D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D515E332620083043C /* Wight.xcdatamodeld */; };
-		D143D7DA15E332620083043C /* ZLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D915E332620083043C /* ZLMasterViewController.m */; };
-		D143D7DD15E332620083043C /* ZLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7DC15E332620083043C /* ZLDetailViewController.m */; };
+		D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */; };
+		D143D7EF15E33C450083043C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7EE15E33C450083043C /* MapKit.framework */; };
+		D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7F015E33C710083043C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +35,10 @@
 		D143D7D015E332620083043C /* ZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
 		D143D7D315E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D143D7D615E332620083043C /* Wight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wight.xcdatamodel; sourceTree = "<group>"; };
-		D143D7D815E332620083043C /* ZLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLMasterViewController.h; sourceTree = "<group>"; };
-		D143D7D915E332620083043C /* ZLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLMasterViewController.m; sourceTree = "<group>"; };
-		D143D7DB15E332620083043C /* ZLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLDetailViewController.h; sourceTree = "<group>"; };
-		D143D7DC15E332620083043C /* ZLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLDetailViewController.m; sourceTree = "<group>"; };
+		D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGatherViewController.h; sourceTree = "<group>"; };
+		D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGatherViewController.m; sourceTree = "<group>"; };
+		D143D7EE15E33C450083043C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D143D7F015E33C710083043C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */,
+				D143D7EF15E33C450083043C /* MapKit.framework in Frameworks */,
 				D143D7BF15E332620083043C /* UIKit.framework in Frameworks */,
 				D143D7C115E332620083043C /* Foundation.framework in Frameworks */,
 				D143D7C315E332620083043C /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +78,8 @@
 		D143D7BD15E332620083043C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D143D7F015E33C710083043C /* CoreLocation.framework */,
+				D143D7EE15E33C450083043C /* MapKit.framework */,
 				D143D7BE15E332620083043C /* UIKit.framework */,
 				D143D7C015E332620083043C /* Foundation.framework */,
 				D143D7C215E332620083043C /* CoreGraphics.framework */,
@@ -89,12 +94,10 @@
 				D143D7CF15E332620083043C /* ZLAppDelegate.h */,
 				D143D7D015E332620083043C /* ZLAppDelegate.m */,
 				D143D7D215E332620083043C /* MainStoryboard.storyboard */,
-				D143D7D815E332620083043C /* ZLMasterViewController.h */,
-				D143D7D915E332620083043C /* ZLMasterViewController.m */,
-				D143D7DB15E332620083043C /* ZLDetailViewController.h */,
-				D143D7DC15E332620083043C /* ZLDetailViewController.m */,
 				D143D7D515E332620083043C /* Wight.xcdatamodeld */,
 				D143D7C715E332620083043C /* Supporting Files */,
+				D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */,
+				D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */,
 			);
 			path = Wight;
 			sourceTree = "<group>";
@@ -177,8 +180,7 @@
 				D143D7CD15E332620083043C /* main.m in Sources */,
 				D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */,
 				D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */,
-				D143D7DA15E332620083043C /* ZLMasterViewController.m in Sources */,
-				D143D7DD15E332620083043C /* ZLDetailViewController.m in Sources */,
+				D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
