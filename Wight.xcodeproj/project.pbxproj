@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D143D7BF15E332620083043C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7BE15E332620083043C /* UIKit.framework */; };
+		D143D7C115E332620083043C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C015E332620083043C /* Foundation.framework */; };
+		D143D7C315E332620083043C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C215E332620083043C /* CoreGraphics.framework */; };
+		D143D7C515E332620083043C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C415E332620083043C /* CoreData.framework */; };
+		D143D7CB15E332620083043C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D143D7C915E332620083043C /* InfoPlist.strings */; };
+		D143D7CD15E332620083043C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7CC15E332620083043C /* main.m */; };
+		D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D015E332620083043C /* ZLAppDelegate.m */; };
+		D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D143D7D215E332620083043C /* MainStoryboard.storyboard */; };
+		D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D515E332620083043C /* Wight.xcdatamodeld */; };
+		D143D7DA15E332620083043C /* ZLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D915E332620083043C /* ZLMasterViewController.m */; };
+		D143D7DD15E332620083043C /* ZLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7DC15E332620083043C /* ZLDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D143D7BA15E332620083043C /* Wight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D143D7BE15E332620083043C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D143D7C015E332620083043C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D143D7C215E332620083043C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D143D7C415E332620083043C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D143D7C815E332620083043C /* Wight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wight-Info.plist"; sourceTree = "<group>"; };
+		D143D7CA15E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D143D7CC15E332620083043C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D143D7CE15E332620083043C /* Wight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wight-Prefix.pch"; sourceTree = "<group>"; };
+		D143D7CF15E332620083043C /* ZLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAppDelegate.h; sourceTree = "<group>"; };
+		D143D7D015E332620083043C /* ZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
+		D143D7D315E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D143D7D615E332620083043C /* Wight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wight.xcdatamodel; sourceTree = "<group>"; };
+		D143D7D815E332620083043C /* ZLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLMasterViewController.h; sourceTree = "<group>"; };
+		D143D7D915E332620083043C /* ZLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLMasterViewController.m; sourceTree = "<group>"; };
+		D143D7DB15E332620083043C /* ZLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLDetailViewController.h; sourceTree = "<group>"; };
+		D143D7DC15E332620083043C /* ZLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D143D7B715E332620083043C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D143D7BF15E332620083043C /* UIKit.framework in Frameworks */,
+				D143D7C115E332620083043C /* Foundation.framework in Frameworks */,
+				D143D7C315E332620083043C /* CoreGraphics.framework in Frameworks */,
+				D143D7C515E332620083043C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D143D7AF15E332620083043C = {
+			isa = PBXGroup;
+			children = (
+				D143D7C615E332620083043C /* Wight */,
+				D143D7BD15E332620083043C /* Frameworks */,
+				D143D7BB15E332620083043C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D143D7BB15E332620083043C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D143D7BA15E332620083043C /* Wight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D143D7BD15E332620083043C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D143D7BE15E332620083043C /* UIKit.framework */,
+				D143D7C015E332620083043C /* Foundation.framework */,
+				D143D7C215E332620083043C /* CoreGraphics.framework */,
+				D143D7C415E332620083043C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D143D7C615E332620083043C /* Wight */ = {
+			isa = PBXGroup;
+			children = (
+				D143D7CF15E332620083043C /* ZLAppDelegate.h */,
+				D143D7D015E332620083043C /* ZLAppDelegate.m */,
+				D143D7D215E332620083043C /* MainStoryboard.storyboard */,
+				D143D7D815E332620083043C /* ZLMasterViewController.h */,
+				D143D7D915E332620083043C /* ZLMasterViewController.m */,
+				D143D7DB15E332620083043C /* ZLDetailViewController.h */,
+				D143D7DC15E332620083043C /* ZLDetailViewController.m */,
+				D143D7D515E332620083043C /* Wight.xcdatamodeld */,
+				D143D7C715E332620083043C /* Supporting Files */,
+			);
+			path = Wight;
+			sourceTree = "<group>";
+		};
+		D143D7C715E332620083043C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D143D7C815E332620083043C /* Wight-Info.plist */,
+				D143D7C915E332620083043C /* InfoPlist.strings */,
+				D143D7CC15E332620083043C /* main.m */,
+				D143D7CE15E332620083043C /* Wight-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D143D7B915E332620083043C /* Wight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "Wight" */;
+			buildPhases = (
+				D143D7B615E332620083043C /* Sources */,
+				D143D7B715E332620083043C /* Frameworks */,
+				D143D7B815E332620083043C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wight;
+			productName = Wight;
+			productReference = D143D7BA15E332620083043C /* Wight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D143D7B115E332620083043C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZL;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Ziato Labs";
+			};
+			buildConfigurationList = D143D7B415E332620083043C /* Build configuration list for PBXProject "Wight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D143D7AF15E332620083043C;
+			productRefGroup = D143D7BB15E332620083043C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D143D7B915E332620083043C /* Wight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D143D7B815E332620083043C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D143D7CB15E332620083043C /* InfoPlist.strings in Resources */,
+				D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D143D7B615E332620083043C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D143D7CD15E332620083043C /* main.m in Sources */,
+				D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */,
+				D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */,
+				D143D7DA15E332620083043C /* ZLMasterViewController.m in Sources */,
+				D143D7DD15E332620083043C /* ZLDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D143D7C915E332620083043C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D143D7CA15E332620083043C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D143D7D215E332620083043C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D143D7D315E332620083043C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D143D7DE15E332620083043C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D143D7DF15E332620083043C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D143D7E115E332620083043C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wight/Wight-Prefix.pch";
+				INFOPLIST_FILE = "Wight/Wight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D143D7E215E332620083043C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wight/Wight-Prefix.pch";
+				INFOPLIST_FILE = "Wight/Wight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D143D7B415E332620083043C /* Build configuration list for PBXProject "Wight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D143D7DE15E332620083043C /* Debug */,
+				D143D7DF15E332620083043C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "Wight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D143D7E115E332620083043C /* Debug */,
+				D143D7E215E332620083043C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D143D7D515E332620083043C /* Wight.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D143D7D615E332620083043C /* Wight.xcdatamodel */,
+			);
+			currentVersion = D143D7D615E332620083043C /* Wight.xcdatamodel */;
+			path = Wight.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D143D7B115E332620083043C /* Project object */;
+}
