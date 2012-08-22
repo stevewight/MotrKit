@@ -134,6 +134,12 @@
     
     [self.eventDataController addEventToMasterList:event];
     [self.eventTableView reloadData];
+    
+    ZLEventAnnotation *annotation = [[ZLEventAnnotation alloc] initWithLocation:event.loc.coordinate];
+    [self.mapView addAnnotation:annotation];
+//    CLLocationDistance distance = 5.0;
+//    MKCircle *circle = [MKCircle circleWithCenterCoordinate:event.loc.coordinate radius:distance];
+//    [self.mapView addOverlay:circle];
 }
 
 -(IBAction)buttonCenter:(id)sender {

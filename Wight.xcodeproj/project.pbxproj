@@ -21,6 +21,7 @@
 		D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7F015E33C710083043C /* CoreLocation.framework */; };
 		D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7F715E408FF0083043C /* ZLEventLocation.m */; };
 		D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */; };
+		D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		D143D7F715E408FF0083043C /* ZLEventLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocation.m; sourceTree = "<group>"; };
 		D143D7F915E40A250083043C /* ZLEventLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventLocationDataController.h; sourceTree = "<group>"; };
 		D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocationDataController.m; sourceTree = "<group>"; };
+		D143D7FC15E47FBB0083043C /* ZLEventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventAnnotation.h; sourceTree = "<group>"; };
+		D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				D143D7F715E408FF0083043C /* ZLEventLocation.m */,
 				D143D7F915E40A250083043C /* ZLEventLocationDataController.h */,
 				D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */,
+				D143D7FC15E47FBB0083043C /* ZLEventAnnotation.h */,
+				D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */,
 			);
 			path = Wight;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */,
 				D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */,
 				D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */,
+				D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

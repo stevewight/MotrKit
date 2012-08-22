@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "ZLEventLocationDataController.h"
 #import "ZLEventLocation.h"
+#import "ZLEventAnnotation.h"
 
 #define METERS_PER_MILE 1609.344
 
