@@ -10,6 +10,7 @@
 
 @implementation ZLEventLocationDataController
 
+@synthesize managedContext;
 @synthesize masterEvenList;
 
 -(id)init {
@@ -29,6 +30,15 @@
 
 -(NSUInteger)countOfMasterEvenList {
     return [self.masterEvenList count];
+}
+
+-(void)saveSession {
+    
+    ZLAppDelegate *appDel = (ZLAppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = appDel.managedObjectContext;
+    
+    
+    
 }
 
 @end

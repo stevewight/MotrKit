@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "ZLEventLocation.h"
+#import "ZLAppDelegate.h"
 
 @interface ZLEventLocationDataController : NSObject
 
+@property (nonatomic,retain) NSManagedObjectContext *managedContext;
 @property (nonatomic,retain) NSMutableArray *masterEvenList;
 
 -(ZLEventLocation *)getObjectFromMasterListAtIndex:(NSUInteger)index;
 -(void)addEventToMasterList:(ZLEventLocation *)event;
 -(NSUInteger)countOfMasterEvenList;
+-(void)saveSession;
 
 @end

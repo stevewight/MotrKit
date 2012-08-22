@@ -17,6 +17,70 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *trackingSession = [NSEntityDescription insertNewObjectForEntityForName:@"TrackingSession" inManagedObjectContext:context];
+    NSManagedObject *anotherTrackingSession = [NSEntityDescription insertNewObjectForEntityForName:@"TrackingSession" inManagedObjectContext:context];
+    
+    [trackingSession setValue:[NSDate date] forKey:@"date"];
+    [anotherTrackingSession setValue:[NSDate date] forKey:@"date"];
+    
+    NSNumber *latTest = [NSNumber numberWithDouble:1.0];
+    NSNumber *lngTest = [NSNumber numberWithDouble:2.0];
+    NSMutableSet *eventSet = [[NSMutableSet alloc] init];
+    NSMutableSet *eventSetTwo = [[NSMutableSet alloc] init];
+    
+    for (int i=0; i < 5; i++) {
+        NSManagedObject *eventLocation = [NSEntityDescription insertNewObjectForEntityForName:@"EventLocation" inManagedObjectContext:context];
+        
+        [eventLocation setValue:@"Test type" forKey:@"type"];
+        [eventLocation setValue:@"Test Desc" forKey:@"desc"];
+        [eventLocation setValue:latTest forKey:@"lat"];
+        [eventLocation setValue:lngTest forKey:@"lng"];
+        [eventLocation setValue:trackingSession forKey:@"trackingSession"];
+        [eventSet addObject:eventLocation];
+        
+    }
+    
+    [trackingSession setValue:eventSet forKey:@"eventLocations"];
+    
+    for (int i=0; i < 5; i++) {
+        NSManagedObject *eventLocationTwo = [NSEntityDescription insertNewObjectForEntityForName:@"EventLocation" inManagedObjectContext:context];
+        
+        [eventLocationTwo setValue:@"Two Test Type" forKey:@"type"];
+        [eventLocationTwo setValue:@"Two Test Dec" forKey:@"desc"];
+        [eventLocationTwo setValue:latTest forKey:@"lat"];
+        [eventLocationTwo setValue:lngTest forKey:@"lng"];
+        [eventLocationTwo setValue:anotherTrackingSession forKey:@"trackingSession"];
+        [eventSetTwo addObject:eventLocationTwo];
+    }
+    
+    [anotherTrackingSession setValue:eventSetTwo forKey:@"eventLocations"];
+    
+    
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Shit didnt work bro %@",[error localizedDescription]);
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TrackingSession" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    WI  
+    for (NSManagedObject *s in fetchedObjects) {
+        NSLog(@"el date: %@",[s valueForKey:@"date"]);
+        
+        NSSet *trackingSessionEventLocations = [s valueForKey:@"eventLocations"];
+        for (NSManagedObject *e in trackingSessionEventLocations) {
+            NSLog(@"la type: %@",[e valueForKey:@"type"]);
+            NSLog(@"la desc: %@",[e valueForKey:@"desc"]);
+            NSLog(@"la lat: %@",[e valueForKey:@"lat"]);
+            NSLog(@"la lng: %@",[e valueForKey:@"lng"]);
+        }
+        
+    }
+    
     return YES;
 }
 							
