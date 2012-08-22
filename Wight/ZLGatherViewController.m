@@ -20,6 +20,7 @@
 @synthesize locationManger;
 @synthesize mapTypeSegment;
 @synthesize zoomLevel;
+@synthesize startLocation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,11 @@
 -(void)locationManager:(CLLocationManager *)manager
    didUpdateToLocation:(CLLocation *)newLocation
           fromLocation:(CLLocation *)oldLocation {
+    
+    //set the starting location if self.startLocation is nil
+    if (self.startLocation == nil) {
+        self.startLocation = newLocation;
+    }
     
     NSLog(@"location manager fired");
     [self.mapView setCenterCoordinate:newLocation.coordinate];
@@ -62,7 +68,16 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"EventCell";
+    NSUInteger eventIndex = [self.eventDataController countOfMasterEvenList] - 1 - indexPath.row;
+    ZLEventLocation *event = [self.eventDataController getObjectFromMasterListAtIndex:eventIndex];
+    
+     NSString *CellIdentifier;
+    
+    if ([event.type isEqualToString:@"[BF]"]) {
+        CellIdentifier = @"ButtonEventCell";
+    } else {
+        CellIdentifier = @"EventCell";
+    }
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell  == nil) {
@@ -70,18 +85,20 @@
                                       reuseIdentifier:CellIdentifier];
     }
     
-    NSUInteger eventIndex = [self.eventDataController countOfMasterEvenList] - 1 - indexPath.row;
-    
-    ZLEventLocation *event = [self.eventDataController getObjectFromMasterListAtIndex:eventIndex];
-    
     UILabel *typeLabel = (UILabel *)[cell viewWithTag:100];
     typeLabel.text = event.type;
     UILabel *descLabel = (UILabel *)[cell viewWithTag:101];
     descLabel.text = event.desc;
-    UILabel *latLabel = (UILabel *)[cell viewWithTag:102];
-    latLabel.text = [NSString stringWithFormat:@"%f", event.loc.coordinate.latitude];
-    UILabel *lngLabel = (UILabel *)[cell viewWithTag:103];
-    lngLabel.text = [NSString stringWithFormat:@"%f", event.loc.coordinate.longitude];
+    
+    if ([event.type isEqualToString:@"[LM]"]) {
+        UILabel *latLabel = (UILabel *)[cell viewWithTag:102];
+        latLabel.text = [NSString stringWithFormat:@"%f", event.loc.coordinate.latitude];
+        UILabel *lngLabel = (UILabel *)[cell viewWithTag:103];
+        lngLabel.text = [NSString stringWithFormat:@"%f", event.loc.coordinate.longitude];
+    } else {
+        UILabel *distanceLabel = (UILabel *)[cell viewWithTag:200];
+        distanceLabel.text = [NSString stringWithFormat:@"%f", [event.loc distanceFromLocation:self.startLocation]];
+    }
     
     return cell;
 }
@@ -98,8 +115,8 @@
     
     locationManger.delegate = self;
     
-    locationManger.desiredAccuracy = kCLLocationAccuracyKilometer;
-    locationManger.distanceFilter = 100;
+    locationManger.desiredAccuracy = kCLLocationAccuracyBest;
+    locationManger.distanceFilter = 31;
     
     [locationManger startUpdatingLocation];
 }
