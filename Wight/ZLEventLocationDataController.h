@@ -12,12 +12,12 @@
 
 @interface ZLEventLocationDataController : NSObject
 
-@property (nonatomic,retain) NSManagedObjectContext *managedContext;
 @property (nonatomic,retain) NSMutableArray *masterEvenList;
 
 -(ZLEventLocation *)getObjectFromMasterListAtIndex:(NSUInteger)index;
 -(void)addEventToMasterList:(ZLEventLocation *)event;
 -(NSUInteger)countOfMasterEvenList;
--(void)saveSession;
+-(NSDate *)saveSession;
+-(void)pullSessions;
 
 @end

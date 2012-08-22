@@ -12,6 +12,8 @@
 #import "ZLEventLocationDataController.h"
 #import "ZLEventLocation.h"
 #import "ZLEventAnnotation.h"
+#import "ZLSessionViewController.h"
+#import "ZLSession.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -29,9 +31,9 @@
 -(void) centerMap;
 -(void) startUpdatingLocationEvents;
 -(IBAction)buttonFire:(id)sender;
--(IBAction)buttonCenter:(id)sender;
 -(IBAction)buttonZoomIn:(id)sender;
 -(IBAction)buttonZoomOut:(id)sender;
 -(IBAction)changeSeg:(id)sender;
+-(IBAction)completeSession:(id)sender;
 
 @end

@@ -107,6 +107,21 @@
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"CompleteShowSession"]) {
+        ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[[segue destinationViewController] topViewController];
+        NSLog(@"segue has fired %@", sessionViewController);
+        NSDate *sessionDate = [self.eventDataController saveSession];
+        
+        ZLSession *theSession = [[ZLSession alloc] init];
+        NSLog(@"this is the session %@",theSession);
+        theSession.date = sessionDate;
+        theSession.dataController = self.eventDataController;
+        [sessionViewController setTrackingSession:theSession];
+    }
+}
+
 -(void) startUpdatingLocationEvents {
     
     if (locationManger == nil) {
@@ -142,11 +157,6 @@
 //    [self.mapView addOverlay:circle];
 }
 
--(IBAction)buttonCenter:(id)sender {
-    NSLog(@"map has centered");
-    [self centerMap];
-}
-
 -(IBAction)buttonZoomIn:(id)sender {
     if (self.zoomLevel > 1) {
         self.zoomLevel = self.zoomLevel - 1;
@@ -159,6 +169,12 @@
         self.zoomLevel = self.zoomLevel + 1;
         [self setRegionWithZoom:self.zoomLevel];
     }
+}
+
+-(IBAction)completeSession:(id)sender {
+    
+    [self.eventDataController saveSession];
+    
 }
 
 -(IBAction)changeSeg:(id)sender {

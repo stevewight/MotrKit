@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9515E58A8B0046055F /* ZLSessionViewController.m */; };
+		D1384A9A15E58D870046055F /* ZLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9915E58D870046055F /* ZLSession.m */; };
 		D143D7BF15E332620083043C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7BE15E332620083043C /* UIKit.framework */; };
 		D143D7C115E332620083043C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C015E332620083043C /* Foundation.framework */; };
 		D143D7C315E332620083043C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C215E332620083043C /* CoreGraphics.framework */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1384A9415E58A8B0046055F /* ZLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionViewController.h; sourceTree = "<group>"; };
+		D1384A9515E58A8B0046055F /* ZLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionViewController.m; sourceTree = "<group>"; };
+		D1384A9815E58D870046055F /* ZLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSession.h; sourceTree = "<group>"; };
+		D1384A9915E58D870046055F /* ZLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSession.m; sourceTree = "<group>"; };
 		D143D7BA15E332620083043C /* Wight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D143D7BE15E332620083043C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D143D7C015E332620083043C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +119,10 @@
 				D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */,
 				D143D7FC15E47FBB0083043C /* ZLEventAnnotation.h */,
 				D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */,
+				D1384A9415E58A8B0046055F /* ZLSessionViewController.h */,
+				D1384A9515E58A8B0046055F /* ZLSessionViewController.m */,
+				D1384A9815E58D870046055F /* ZLSession.h */,
+				D1384A9915E58D870046055F /* ZLSession.m */,
 			);
 			path = Wight;
 			sourceTree = "<group>";
@@ -199,6 +209,8 @@
 				D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */,
 				D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */,
 				D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */,
+				D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */,
+				D1384A9A15E58D870046055F /* ZLSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +326,7 @@
 				D143D7E215E332620083043C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
