@@ -35,5 +35,6 @@
 -(IBAction)buttonZoomOut:(id)sender;
 -(IBAction)changeSeg:(id)sender;
 -(IBAction)completeSession:(id)sender;
+-(IBAction)exitSession:(id)sender;
 
 @end

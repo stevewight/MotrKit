@@ -19,18 +19,6 @@
     return self;
 }
 
--(ZLEventLocation *)getObjectFromMasterListAtIndex:(NSUInteger)index {
-    return [self.masterEvenList objectAtIndex:index];
-}
-
--(void)addEventToMasterList:(ZLEventLocation *)event {
-    [self.masterEvenList addObject:event];
-}
-
--(NSUInteger)countOfMasterEvenList {
-    return [self.masterEvenList count];
-}
-
 -(NSDate *)saveSession {
     
     ZLAppDelegate *appDel = (ZLAppDelegate*)[[UIApplication sharedApplication] delegate];
@@ -64,31 +52,18 @@
     return [trackingSession valueForKey:@"date"];
 }
 
--(void)pullSessions {
-    
-    NSError *error;
-    ZLAppDelegate *appDel = (ZLAppDelegate*)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [appDel managedObjectContext];
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"TrackingSession" inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    
-    for (NSManagedObject *s in fetchedObjects) {
-        NSLog(@"el date: %@",[s valueForKey:@"date"]);
-        
-        NSSet *trackingSessionEventLocations = [s valueForKey:@"eventLocations"];
-        for (NSManagedObject *e in trackingSessionEventLocations) {
-            NSLog(@"la type: %@",[e valueForKey:@"type"]);
-            NSLog(@"la desc: %@",[e valueForKey:@"desc"]);
-            NSLog(@"la lat: %@",[e valueForKey:@"lat"]);
-            NSLog(@"la lng: %@",[e valueForKey:@"lng"]);
-        }
-        
-    }
 
-    NSLog(@"sessions have been pulled");
+-(ZLEventLocation *)getObjectFromMasterListAtIndex:(NSUInteger)index {
+    return [self.masterEvenList objectAtIndex:index];
 }
+
+-(void)addEventToMasterList:(ZLEventLocation *)event {
+    [self.masterEvenList addObject:event];
+}
+
+-(NSUInteger)countOfMasterEvenList {
+    return [self.masterEvenList count];
+}
+
 
 @end

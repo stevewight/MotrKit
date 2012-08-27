@@ -1,22 +1,18 @@
 //
-//  ZLSessionViewController.m
+//  ZLSessionsListViewController.m
 //  Wight
 //
-//  Created by Steve Wight on 8/22/12.
+//  Created by Steve Wight on 8/26/12.
 //  Copyright (c) 2012 Ziato Labs. All rights reserved.
 //
 
-#import "ZLSessionViewController.h"
+#import "ZLSessionsListViewController.h"
 
-@interface ZLSessionViewController ()
+@interface ZLSessionsListViewController ()
 
 @end
 
-@implementation ZLSessionViewController
-
-@synthesize trackingSession;
-@synthesize sessionDateLabel;
-@synthesize totalEventsLabel;
+@implementation ZLSessionsListViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,29 +23,19 @@
     return self;
 }
 
--(IBAction)doneButtonPressed:(id)sender {
-    NSLog(@"done button has been pressed");
-    
-    NSLog(@"this is the presenting view contorller  %@", [self presentingViewController]);
-    NSLog(@"this is the presented view controller %@", [self presentedViewController]);
-    
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"this is session when ZLSessionViewController is loaded %@",self.trackingSession);
     
-    self.sessionDateLabel.text = [NSString stringWithFormat:@"%@",self.trackingSession.date];
-    self.totalEventsLabel.text = [NSString stringWithFormat:@"%d",[self.trackingSession.dataController countOfMasterEvenList]];
+    self.dataController = [[ZLSessionDataController alloc] init];
+    [self.dataController pullSessions];
+    //[self.tableView reloadData];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)viewDidUnload
@@ -66,29 +52,36 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"Cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    
-//    // Configure the cell...
-//    
-//    return cell;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section.
+    return [self.dataController countOfSessionsMasterList];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"SessionCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    ZLSession *sessionAtIndex = [self.dataController sessionInMasterListAtIndex:indexPath.row];
+    
+    NSLog(@"sessionAtIndex: %@",sessionAtIndex);
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"MM/dd/YYY -- HH:mm:ss"];
+    
+    [[cell textLabel] setText:[df stringFromDate:sessionAtIndex.date]];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%d events",[sessionAtIndex.dataController countOfMasterEvenList]]];
+    
+    return cell;
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -15,4 +15,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *sessionDateLabel;
 @property (nonatomic, retain) IBOutlet UILabel *totalEventsLabel;
 
+-(IBAction)doneButtonPressed:(id)sender;
+
 @end

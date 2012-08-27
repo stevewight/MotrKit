@@ -110,7 +110,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([[segue identifier] isEqualToString:@"CompleteShowSession"]) {
-        ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[[segue destinationViewController] topViewController];
+        ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[segue destinationViewController];
+        
         NSLog(@"segue has fired %@", sessionViewController);
         NSDate *sessionDate = [self.eventDataController saveSession];
         
@@ -194,6 +195,10 @@
     
 }
 
+-(IBAction)exitSession:(id)sender {
+    NSLog(@"exitSession has been pressed");
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 -(void) centerMap {
     NSLog(@"centerMap fires");

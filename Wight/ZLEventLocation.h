@@ -15,4 +15,6 @@
 @property (nonatomic,retain) NSString *desc;
 @property (nonatomic,retain) CLLocation *loc;
 
+-(void)setLocLat:(NSNumber*)lat Lng:(NSNumber*)lng;
+
 @end

@@ -14,10 +14,9 @@
 
 @property (nonatomic,retain) NSMutableArray *masterEvenList;
 
+-(NSDate *)saveSession;
 -(ZLEventLocation *)getObjectFromMasterListAtIndex:(NSUInteger)index;
 -(void)addEventToMasterList:(ZLEventLocation *)event;
 -(NSUInteger)countOfMasterEvenList;
--(NSDate *)saveSession;
--(void)pullSessions;
 
 @end

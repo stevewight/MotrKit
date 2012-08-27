@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D123A93815EB18720088BDAC /* ZLSessionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */; };
+		D123A93C15EBD1DE0088BDAC /* ZLSessionDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */; };
 		D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9515E58A8B0046055F /* ZLSessionViewController.m */; };
 		D1384A9A15E58D870046055F /* ZLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9915E58D870046055F /* ZLSession.m */; };
 		D143D7BF15E332620083043C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7BE15E332620083043C /* UIKit.framework */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D123A93615EB18720088BDAC /* ZLSessionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionsListViewController.h; sourceTree = "<group>"; };
+		D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionsListViewController.m; sourceTree = "<group>"; };
+		D123A93A15EBD1DD0088BDAC /* ZLSessionDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionDataController.h; sourceTree = "<group>"; };
+		D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionDataController.m; sourceTree = "<group>"; };
 		D1384A9415E58A8B0046055F /* ZLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionViewController.h; sourceTree = "<group>"; };
 		D1384A9515E58A8B0046055F /* ZLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionViewController.m; sourceTree = "<group>"; };
 		D1384A9815E58D870046055F /* ZLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSession.h; sourceTree = "<group>"; };
@@ -123,6 +129,10 @@
 				D1384A9515E58A8B0046055F /* ZLSessionViewController.m */,
 				D1384A9815E58D870046055F /* ZLSession.h */,
 				D1384A9915E58D870046055F /* ZLSession.m */,
+				D123A93615EB18720088BDAC /* ZLSessionsListViewController.h */,
+				D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */,
+				D123A93A15EBD1DD0088BDAC /* ZLSessionDataController.h */,
+				D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */,
 			);
 			path = Wight;
 			sourceTree = "<group>";
@@ -211,6 +221,8 @@
 				D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */,
 				D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */,
 				D1384A9A15E58D870046055F /* ZLSession.m in Sources */,
+				D123A93815EB18720088BDAC /* ZLSessionsListViewController.m in Sources */,
+				D123A93C15EBD1DE0088BDAC /* ZLSessionDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

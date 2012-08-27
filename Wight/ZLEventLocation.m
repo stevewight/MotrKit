@@ -14,4 +14,10 @@
 @synthesize desc;
 @synthesize loc;
 
+-(void)setLocLat:(NSNumber*)lat Lng:(NSNumber*)lng {
+    
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:[lat doubleValue] longitude:[lng doubleValue]];
+    self.loc = location;
+}
+
 @end

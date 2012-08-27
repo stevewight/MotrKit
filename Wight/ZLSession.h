@@ -14,4 +14,6 @@
 @property (nonatomic, retain) NSDate *date;
 @property (nonatomic, retain) ZLEventLocationDataController *dataController;
 
+-(void)createEventLocationsFromSet:(NSSet *)eventLocation;
+
 @end
