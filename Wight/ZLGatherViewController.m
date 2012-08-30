@@ -21,6 +21,7 @@
 @synthesize mapTypeSegment;
 @synthesize zoomLevel;
 @synthesize startLocation;
+@synthesize startButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -140,6 +141,8 @@
 -(void) buttonFire:(id)sender {
     
     NSLog(@"bang bang has fired");
+    
+    [self.startButton setTitle:@"Fire Event" forState:UIControlStateNormal];
     
     ZLEventLocation *event = [[ZLEventLocation alloc] init];
     event.type = @"[BF]";

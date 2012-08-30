@@ -14,6 +14,8 @@
 
 @implementation ZLSessionsListViewController
 
+@synthesize dataController;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -36,6 +38,20 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"ShowSession"]) {
+        ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[segue destinationViewController];
+        
+        NSLog(@"ShowSession segue has fired %@", sessionViewController);
+        
+        ZLSession *theSession = [self.dataController sessionInMasterListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        
+        [sessionViewController setTrackingSession:theSession];
+    }
+    
 }
 
 - (void)viewDidUnload

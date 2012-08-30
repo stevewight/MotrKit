@@ -102,9 +102,9 @@
                     </tableView>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-451" y="103"/>
+            <point key="canvasLocation" x="-239" y="104"/>
         </scene>
-        <!--Table View Controller - Casa-->
+        <!--Table View Controller - Home-->
         <scene sceneID="2sY-dW-ptw">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8n-J5-rsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,7 +191,7 @@
                             <outlet property="delegate" destination="s0Z-D0-Ft0" id="8lE-rJ-OT8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Casa" id="Dh8-dW-duz">
+                    <navigationItem key="navigationItem" title="Home" id="Dh8-dW-duz">
                         <barButtonItem key="leftBarButtonItem" title="Log Out" id="TuE-D7-WLy">
                             <color key="tintColor" red="0.15914606910000001" green="0.43295040080000002" blue="0.75" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -287,7 +287,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="4zb-Gb-b2r" kind="push" id="RTo-5k-UEH"/>
+                                    <segue destination="4zb-Gb-b2r" kind="push" identifier="ShowSession" id="RTo-5k-UEH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -468,7 +468,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="I0O-0K-dOR">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="MgG-dw-2Xd">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MgG-dw-2Xd">
                             <connections>
                                 <action selector="exitSession:" destination="Kkt-lt-vVF" id="UfE-Sd-OKD"/>
                             </connections>
@@ -484,7 +484,7 @@
                                 <action selector="changeSeg:" destination="Kkt-lt-vVF" eventType="valueChanged" id="x3c-cQ-QV3"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Sp0-ap-1U3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sp0-ap-1U3">
                             <connections>
                                 <action selector="completeSession:" destination="Kkt-lt-vVF" id="AnF-lJ-PGW"/>
                                 <segue destination="4zb-Gb-b2r" kind="push" identifier="CompleteShowSession" id="vhh-oN-EAE"/>
@@ -495,12 +495,13 @@
                         <outlet property="eventTableView" destination="A3z-vs-gNd" id="iOE-Sp-Jmi"/>
                         <outlet property="mapTypeSegment" destination="IjS-cb-y3z" id="HYq-S8-sGi"/>
                         <outlet property="mapView" destination="MMj-RJ-1kf" id="B9V-Fc-f9m"/>
+                        <outlet property="startButton" destination="0Mw-Ob-UHC" id="D5w-s5-FPC"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1527" y="-335"/>
         </scene>
-        <!--Session View Controller - Session-->
+        <!--Session View Controller-->
         <scene sceneID="clX-4f-nVJ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3h-a2-1Ot" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,6 +544,12 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="304"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="cVm-pQ-T6T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="304"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </mapView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
@@ -579,7 +586,7 @@
                             <outlet property="delegate" destination="4zb-Gb-b2r" id="l3r-wu-MZG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Session" id="FA5-NE-CPo">
+                    <navigationItem key="navigationItem" id="FA5-NE-CPo">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="PTZ-e4-OWK">
                             <connections>
                                 <action selector="doneButtonPressed:" destination="4zb-Gb-b2r" id="62o-JJ-6Pi"/>
@@ -587,6 +594,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapView" destination="cVm-pQ-T6T" id="OyI-TD-gSB"/>
                         <outlet property="sessionDateLabel" destination="O1l-mf-eGb" id="48C-kz-BOK"/>
                         <outlet property="totalEventsLabel" destination="aOH-H1-mtH" id="3AA-bT-ifv"/>
                     </connections>
@@ -627,12 +635,14 @@
                 <relationship kind="outlet" name="eventTableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="mapTypeSegment" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="ZLSessionViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ZLSessionViewController.h"/>
             <relationships>
                 <relationship kind="action" name="doneButtonPressed:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="sessionDateLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="totalEventsLabel" candidateClass="UILabel"/>
             </relationships>

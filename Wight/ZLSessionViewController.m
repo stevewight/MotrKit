@@ -17,6 +17,7 @@
 @synthesize trackingSession;
 @synthesize sessionDateLabel;
 @synthesize totalEventsLabel;
+@synthesize mapView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,6 +37,35 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+-(void)setSessionLocationsOnMap {
+    
+    NSLog(@"setSessionLocationOnMap has been fired");
+    
+    ZLEventLocation *startEvent = [trackingSession.dataController getObjectFromMasterListAtIndex:0];
+    
+    
+    //zoom in based on the furthest left and furthese right location coordinates
+    MKCoordinateSpan span;
+    MKCoordinateRegion region;
+    
+    span.latitudeDelta = 0.03;
+    span.longitudeDelta = 0.012;
+
+    region.center = startEvent.loc.coordinate;
+    region.span = span;
+    
+    [self.mapView setRegion:region animated:YES];
+    
+    for (int i=0;i < [self.trackingSession.dataController countOfMasterEvenList];i++) {
+        
+        ZLEventLocation *eventLoc = [self.trackingSession.dataController getObjectFromMasterListAtIndex:i];
+        
+        ZLEventAnnotation *annotation = [[ZLEventAnnotation alloc] initWithLocation:eventLoc.loc.coordinate];
+        [self.mapView addAnnotation:annotation];
+    }
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,6 +73,8 @@
     
     self.sessionDateLabel.text = [NSString stringWithFormat:@"%@",self.trackingSession.date];
     self.totalEventsLabel.text = [NSString stringWithFormat:@"%d",[self.trackingSession.dataController countOfMasterEvenList]];
+    
+    [self setSessionLocationsOnMap];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

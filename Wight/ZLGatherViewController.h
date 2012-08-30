@@ -26,6 +26,7 @@
 @property (nonatomic, retain) IBOutlet UISegmentedControl *mapTypeSegment;
 @property (nonatomic) int zoomLevel;
 @property (nonatomic, retain) CLLocation *startLocation;
+@property (nonatomic, retain) IBOutlet UIButton *startButton;
 
 -(void) setRegionWithZoom:(int)zoomLevel;
 -(void) centerMap;

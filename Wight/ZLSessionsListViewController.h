@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZLSessionDataController.h"
 #import "ZLSession.h"
+#import "ZLSessionViewController.h"
 
 @interface ZLSessionsListViewController : UITableViewController
 
