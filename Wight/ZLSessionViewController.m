@@ -18,6 +18,7 @@
 @synthesize sessionDateLabel;
 @synthesize totalEventsLabel;
 @synthesize mapView;
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,10 +32,11 @@
 -(IBAction)doneButtonPressed:(id)sender {
     NSLog(@"done button has been pressed");
     
-    NSLog(@"this is the presenting view contorller  %@", [self presentingViewController]);
-    NSLog(@"this is the presented view controller %@", [self presentedViewController]);
+    NSLog(@"This is the navigationController: %@",[self.navigationController viewControllers]);
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.delegate zlSessionViewControllerIsDone];
+    NSArray *viewControllers = [self.navigationController viewControllers];
+    [self.navigationController popToViewController:[viewControllers objectAtIndex:1] animated:YES];
 }
 
 -(void)setSessionLocationsOnMap {
@@ -42,7 +44,6 @@
     NSLog(@"setSessionLocationOnMap has been fired");
     
     ZLEventLocation *startEvent = [trackingSession.dataController getObjectFromMasterListAtIndex:0];
-    
     
     //zoom in based on the furthest left and furthese right location coordinates
     MKCoordinateSpan span;
@@ -61,6 +62,16 @@
         ZLEventLocation *eventLoc = [self.trackingSession.dataController getObjectFromMasterListAtIndex:i];
         
         ZLEventAnnotation *annotation = [[ZLEventAnnotation alloc] initWithLocation:eventLoc.loc.coordinate];
+        
+//        if (i==0) {
+//            annotation.pinColor = MKPinAnnotationColorRed;
+//        } else if ([eventLoc.type isEqualToString:@"[BF]"]) {
+//            annotation.pinColor = MKPinAnnotationColorGreen;
+//        } else if ([eventLoc.type isEqualToString:@"[LM]"]) {
+//            annotation.pinColor = MKPinAnnotationColorPurple;
+//        }
+        
+        
         [self.mapView addAnnotation:annotation];
     }
     
@@ -87,6 +98,8 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    
+    self.mapView = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

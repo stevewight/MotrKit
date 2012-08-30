@@ -17,7 +17,7 @@
 
 #define METERS_PER_MILE 1609.344
 
-@interface ZLGatherViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface ZLGatherViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource, ZLSessionViewControllerDelegate>
 
 @property (nonatomic, retain) ZLEventLocationDataController *eventDataController;
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;

@@ -11,7 +11,7 @@
 #import "ZLSession.h"
 #import "ZLSessionViewController.h"
 
-@interface ZLSessionsListViewController : UITableViewController
+@interface ZLSessionsListViewController : UITableViewController <ZLSessionViewControllerDelegate>
 
 @property (nonatomic, retain) ZLSessionDataController *dataController;
 

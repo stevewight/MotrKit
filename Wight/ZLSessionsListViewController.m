@@ -46,6 +46,7 @@
         ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[segue destinationViewController];
         
         NSLog(@"ShowSession segue has fired %@", sessionViewController);
+        sessionViewController.delegate = self;
         
         ZLSession *theSession = [self.dataController sessionInMasterListAtIndex:[self.tableView indexPathForSelectedRow].row];
         
@@ -54,9 +55,16 @@
     
 }
 
+-(void)zlSessionViewControllerIsDone {
+    
+    NSLog(@"This is the ZLSessionViewControllerIsDone!!");
+    //[self dismissModalViewControllerAnimated:YES];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

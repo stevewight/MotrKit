@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 #import "ZLSession.h"
 #import "ZLEventAnnotation.h"
 #import "ZLEventLocation.h"
+#import "ZLSessionViewController.h"
+
+@protocol ZLSessionViewControllerDelegate <NSObject>
+
+-(void)zlSessionViewControllerIsDone;
+
+@end
 
 @interface ZLSessionViewController : UITableViewController
 
@@ -18,6 +24,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *sessionDateLabel;
 @property (nonatomic, retain) IBOutlet UILabel *totalEventsLabel;
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) id <ZLSessionViewControllerDelegate> delegate;
 
 -(IBAction)doneButtonPressed:(id)sender;
 -(void)setSessionLocationsOnMap;

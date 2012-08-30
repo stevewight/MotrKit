@@ -112,7 +112,7 @@
     
     if ([[segue identifier] isEqualToString:@"CompleteShowSession"]) {
         ZLSessionViewController *sessionViewController = (ZLSessionViewController*)[segue destinationViewController];
-        
+        sessionViewController.delegate = self;
         NSLog(@"segue has fired %@", sessionViewController);
         NSDate *sessionDate = [self.eventDataController saveSession];
         
@@ -122,6 +122,14 @@
         theSession.dataController = self.eventDataController;
         [sessionViewController setTrackingSession:theSession];
     }
+}
+
+-(void)zlSessionViewControllerIsDone {
+    
+    NSLog(@"zlSessionViewControllerIsDone fired in ZLGatherViewController");
+    NSArray *viewControllers = [self.navigationController viewControllers];
+    NSLog(@"These are the viewControllers: %@", viewControllers);
+    [self.navigationController popToViewController:[viewControllers objectAtIndex:0] animated:YES];
 }
 
 -(void) startUpdatingLocationEvents {

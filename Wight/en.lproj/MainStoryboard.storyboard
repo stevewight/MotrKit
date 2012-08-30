@@ -85,7 +85,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="TUO-Dy-EdR" kind="modal" id="JXC-Wq-mwB"/>
+                                                        <segue destination="o63-rZ-jmc" kind="modal" id="V5w-bD-x1H"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -191,14 +191,10 @@
                             <outlet property="delegate" destination="s0Z-D0-Ft0" id="8lE-rJ-OT8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="Dh8-dW-duz">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="TuE-D7-WLy">
-                            <color key="tintColor" red="0.15914606910000001" green="0.43295040080000002" blue="0.75" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="Dh8-dW-duz"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="939" y="104"/>
+            <point key="canvasLocation" x="1238" y="104"/>
         </scene>
         <!--Table View Controller - Settings-->
         <scene sceneID="7b7-Wf-3Xc">
@@ -299,7 +295,7 @@
                     <navigationItem key="navigationItem" title="Sessions" id="4Si-i9-KRp"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1527" y="242"/>
+            <point key="canvasLocation" x="2053" y="242"/>
         </scene>
         <!--Gather View Controller-->
         <scene sceneID="CFg-Hj-acj">
@@ -499,7 +495,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1527" y="-335"/>
+            <point key="canvasLocation" x="2053" y="-335"/>
         </scene>
         <!--Session View Controller-->
         <scene sceneID="clX-4f-nVJ">
@@ -600,26 +596,25 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="2156" y="-59"/>
+            <point key="canvasLocation" x="2682" y="-59"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="D7Q-aC-EY3">
+        <scene sceneID="zLF-gp-96M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OaC-fF-aWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="TUO-Dy-EdR" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPU-rd-thH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="o63-rZ-jmc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="aFS-Fp-3XL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="61d-hD-6vv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SIV-xV-hvo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="s0Z-D0-Ft0" kind="relationship" relationship="rootViewController" id="Cuz-wC-MRb"/>
+                        <segue destination="s0Z-D0-Ft0" kind="relationship" relationship="rootViewController" id="88Q-ia-oC3"/>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="328" y="104"/>
+            <point key="canvasLocation" x="467" y="104"/>
         </scene>
     </scenes>
     <classes>
@@ -657,6 +652,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RTo-5k-UEH"/>
+        <segue reference="vhh-oN-EAE"/>
     </inferredMetricsTieBreakers>
 </document>
