@@ -19,7 +19,7 @@
 		D143D7CD15E332620083043C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7CC15E332620083043C /* main.m */; };
 		D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D015E332620083043C /* ZLAppDelegate.m */; };
 		D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D143D7D215E332620083043C /* MainStoryboard.storyboard */; };
-		D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D515E332620083043C /* Wight.xcdatamodeld */; };
+		D143D7D715E332620083043C /* MotrKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D515E332620083043C /* MotrKit.xcdatamodeld */; };
 		D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */; };
 		D143D7EF15E33C450083043C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7EE15E33C450083043C /* MapKit.framework */; };
 		D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7F015E33C710083043C /* CoreLocation.framework */; };
@@ -37,19 +37,19 @@
 		D1384A9515E58A8B0046055F /* ZLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionViewController.m; sourceTree = "<group>"; };
 		D1384A9815E58D870046055F /* ZLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSession.h; sourceTree = "<group>"; };
 		D1384A9915E58D870046055F /* ZLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSession.m; sourceTree = "<group>"; };
-		D143D7BA15E332620083043C /* Wight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D143D7BA15E332620083043C /* MotrKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotrKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D143D7BE15E332620083043C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D143D7C015E332620083043C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D143D7C215E332620083043C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D143D7C415E332620083043C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D143D7C815E332620083043C /* Wight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wight-Info.plist"; sourceTree = "<group>"; };
+		D143D7C815E332620083043C /* MotrKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotrKit-Info.plist"; sourceTree = "<group>"; };
 		D143D7CA15E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D143D7CC15E332620083043C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D143D7CE15E332620083043C /* Wight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wight-Prefix.pch"; sourceTree = "<group>"; };
+		D143D7CE15E332620083043C /* MotrKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotrKit-Prefix.pch"; sourceTree = "<group>"; };
 		D143D7CF15E332620083043C /* ZLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAppDelegate.h; sourceTree = "<group>"; };
 		D143D7D015E332620083043C /* ZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
 		D143D7D315E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D143D7D615E332620083043C /* Wight.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wight.xcdatamodel; sourceTree = "<group>"; };
+		D143D7D615E332620083043C /* MotrKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotrKit.xcdatamodel; sourceTree = "<group>"; };
 		D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGatherViewController.h; sourceTree = "<group>"; };
 		D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGatherViewController.m; sourceTree = "<group>"; };
 		D143D7EE15E33C450083043C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -91,7 +91,7 @@
 		D143D7BB15E332620083043C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D143D7BA15E332620083043C /* Wight.app */,
+				D143D7BA15E332620083043C /* MotrKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 				D143D7CF15E332620083043C /* ZLAppDelegate.h */,
 				D143D7D015E332620083043C /* ZLAppDelegate.m */,
 				D143D7D215E332620083043C /* MainStoryboard.storyboard */,
-				D143D7D515E332620083043C /* Wight.xcdatamodeld */,
+				D143D7D515E332620083043C /* MotrKit.xcdatamodeld */,
 				D143D7C715E332620083043C /* Supporting Files */,
 				D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */,
 				D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */,
@@ -140,10 +140,10 @@
 		D143D7C715E332620083043C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D143D7C815E332620083043C /* Wight-Info.plist */,
+				D143D7C815E332620083043C /* MotrKit-Info.plist */,
 				D143D7C915E332620083043C /* InfoPlist.strings */,
 				D143D7CC15E332620083043C /* main.m */,
-				D143D7CE15E332620083043C /* Wight-Prefix.pch */,
+				D143D7CE15E332620083043C /* MotrKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D143D7B915E332620083043C /* Wight */ = {
+		D143D7B915E332620083043C /* MotrKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "Wight" */;
+			buildConfigurationList = D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "MotrKit" */;
 			buildPhases = (
 				D143D7B615E332620083043C /* Sources */,
 				D143D7B715E332620083043C /* Frameworks */,
@@ -163,9 +163,9 @@
 			);
 			dependencies = (
 			);
-			name = Wight;
+			name = MotrKit;
 			productName = Wight;
-			productReference = D143D7BA15E332620083043C /* Wight.app */;
+			productReference = D143D7BA15E332620083043C /* MotrKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Ziato Labs";
 			};
-			buildConfigurationList = D143D7B415E332620083043C /* Build configuration list for PBXProject "Wight" */;
+			buildConfigurationList = D143D7B415E332620083043C /* Build configuration list for PBXProject "MotrKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D143D7B915E332620083043C /* Wight */,
+				D143D7B915E332620083043C /* MotrKit */,
 			);
 		};
 /* End PBXProject section */
@@ -214,7 +214,7 @@
 			files = (
 				D143D7CD15E332620083043C /* main.m in Sources */,
 				D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */,
-				D143D7D715E332620083043C /* Wight.xcdatamodeld in Sources */,
+				D143D7D715E332620083043C /* MotrKit.xcdatamodeld in Sources */,
 				D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */,
 				D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */,
 				D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */,
@@ -301,9 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Wight/Wight-Prefix.pch";
-				INFOPLIST_FILE = "Wight/Wight-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Wight/MotrKit-Prefix.pch";
+				INFOPLIST_FILE = "Wight/MotrKit-Info.plist";
+				PRODUCT_NAME = MotrKit;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -312,9 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Wight/Wight-Prefix.pch";
-				INFOPLIST_FILE = "Wight/Wight-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Wight/MotrKit-Prefix.pch";
+				INFOPLIST_FILE = "Wight/MotrKit-Info.plist";
+				PRODUCT_NAME = MotrKit;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D143D7B415E332620083043C /* Build configuration list for PBXProject "Wight" */ = {
+		D143D7B415E332620083043C /* Build configuration list for PBXProject "MotrKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D143D7DE15E332620083043C /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "Wight" */ = {
+		D143D7E015E332620083043C /* Build configuration list for PBXNativeTarget "MotrKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D143D7E115E332620083043C /* Debug */,
@@ -343,13 +343,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D143D7D515E332620083043C /* Wight.xcdatamodeld */ = {
+		D143D7D515E332620083043C /* MotrKit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D143D7D615E332620083043C /* Wight.xcdatamodel */,
+				D143D7D615E332620083043C /* MotrKit.xcdatamodel */,
 			);
-			currentVersion = D143D7D615E332620083043C /* Wight.xcdatamodel */;
-			path = Wight.xcdatamodeld;
+			currentVersion = D143D7D615E332620083043C /* MotrKit.xcdatamodel */;
+			path = MotrKit.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
