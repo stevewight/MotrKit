@@ -7,59 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D123A93815EB18720088BDAC /* ZLSessionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */; };
-		D123A93C15EBD1DE0088BDAC /* ZLSessionDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */; };
-		D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9515E58A8B0046055F /* ZLSessionViewController.m */; };
-		D1384A9A15E58D870046055F /* ZLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D1384A9915E58D870046055F /* ZLSession.m */; };
 		D143D7BF15E332620083043C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7BE15E332620083043C /* UIKit.framework */; };
 		D143D7C115E332620083043C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C015E332620083043C /* Foundation.framework */; };
 		D143D7C315E332620083043C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C215E332620083043C /* CoreGraphics.framework */; };
 		D143D7C515E332620083043C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C415E332620083043C /* CoreData.framework */; };
-		D143D7CB15E332620083043C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D143D7C915E332620083043C /* InfoPlist.strings */; };
-		D143D7CD15E332620083043C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7CC15E332620083043C /* main.m */; };
-		D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D015E332620083043C /* ZLAppDelegate.m */; };
-		D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D143D7D215E332620083043C /* MainStoryboard.storyboard */; };
-		D143D7D715E332620083043C /* MotrKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D143D7D515E332620083043C /* MotrKit.xcdatamodeld */; };
-		D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */; };
 		D143D7EF15E33C450083043C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7EE15E33C450083043C /* MapKit.framework */; };
 		D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7F015E33C710083043C /* CoreLocation.framework */; };
-		D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7F715E408FF0083043C /* ZLEventLocation.m */; };
-		D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */; };
-		D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */; };
+		D1C5BCB9160BE1C900436EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1C5BC9E160BE1C900436EB1 /* InfoPlist.strings */; };
+		D1C5BCBA160BE1C900436EB1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C5BCA0160BE1C900436EB1 /* MainStoryboard.storyboard */; };
+		D1C5BCBB160BE1C900436EB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCA2160BE1C900436EB1 /* main.m */; };
+		D1C5BCBC160BE1C900436EB1 /* MotrKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1C5BCA3160BE1C900436EB1 /* MotrKit-Info.plist */; };
+		D1C5BCBD160BE1C900436EB1 /* MotrKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCA5160BE1C900436EB1 /* MotrKit.xcdatamodeld */; };
+		D1C5BCBE160BE1C900436EB1 /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCA8160BE1C900436EB1 /* ZLAppDelegate.m */; };
+		D1C5BCBF160BE1C900436EB1 /* ZLEventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCAA160BE1C900436EB1 /* ZLEventAnnotation.m */; };
+		D1C5BCC0160BE1C900436EB1 /* ZLEventLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCAC160BE1C900436EB1 /* ZLEventLocation.m */; };
+		D1C5BCC1160BE1C900436EB1 /* ZLEventLocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCAE160BE1C900436EB1 /* ZLEventLocationDataController.m */; };
+		D1C5BCC2160BE1C900436EB1 /* ZLGatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCB0160BE1C900436EB1 /* ZLGatherViewController.m */; };
+		D1C5BCC3160BE1C900436EB1 /* ZLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCB2160BE1C900436EB1 /* ZLSession.m */; };
+		D1C5BCC4160BE1C900436EB1 /* ZLSessionDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCB4160BE1C900436EB1 /* ZLSessionDataController.m */; };
+		D1C5BCC5160BE1C900436EB1 /* ZLSessionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCB6160BE1C900436EB1 /* ZLSessionsListViewController.m */; };
+		D1C5BCC6160BE1C900436EB1 /* ZLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCB8160BE1C900436EB1 /* ZLSessionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D123A93615EB18720088BDAC /* ZLSessionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionsListViewController.h; sourceTree = "<group>"; };
-		D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionsListViewController.m; sourceTree = "<group>"; };
-		D123A93A15EBD1DD0088BDAC /* ZLSessionDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionDataController.h; sourceTree = "<group>"; };
-		D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionDataController.m; sourceTree = "<group>"; };
-		D1384A9415E58A8B0046055F /* ZLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionViewController.h; sourceTree = "<group>"; };
-		D1384A9515E58A8B0046055F /* ZLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionViewController.m; sourceTree = "<group>"; };
-		D1384A9815E58D870046055F /* ZLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSession.h; sourceTree = "<group>"; };
-		D1384A9915E58D870046055F /* ZLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSession.m; sourceTree = "<group>"; };
 		D143D7BA15E332620083043C /* MotrKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotrKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D143D7BE15E332620083043C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D143D7C015E332620083043C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D143D7C215E332620083043C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D143D7C415E332620083043C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D143D7C815E332620083043C /* MotrKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotrKit-Info.plist"; sourceTree = "<group>"; };
-		D143D7CA15E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D143D7CC15E332620083043C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D143D7CE15E332620083043C /* MotrKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotrKit-Prefix.pch"; sourceTree = "<group>"; };
-		D143D7CF15E332620083043C /* ZLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAppDelegate.h; sourceTree = "<group>"; };
-		D143D7D015E332620083043C /* ZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
-		D143D7D315E332620083043C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D143D7D615E332620083043C /* MotrKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotrKit.xcdatamodel; sourceTree = "<group>"; };
-		D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGatherViewController.h; sourceTree = "<group>"; };
-		D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGatherViewController.m; sourceTree = "<group>"; };
 		D143D7EE15E33C450083043C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D143D7F015E33C710083043C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D143D7F615E408FF0083043C /* ZLEventLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventLocation.h; sourceTree = "<group>"; };
-		D143D7F715E408FF0083043C /* ZLEventLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocation.m; sourceTree = "<group>"; };
-		D143D7F915E40A250083043C /* ZLEventLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventLocationDataController.h; sourceTree = "<group>"; };
-		D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocationDataController.m; sourceTree = "<group>"; };
-		D143D7FC15E47FBB0083043C /* ZLEventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventAnnotation.h; sourceTree = "<group>"; };
-		D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventAnnotation.m; sourceTree = "<group>"; };
+		D1C5BC9F160BE1C900436EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1C5BCA1160BE1C900436EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D1C5BCA2160BE1C900436EB1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1C5BCA3160BE1C900436EB1 /* MotrKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MotrKit-Info.plist"; sourceTree = "<group>"; };
+		D1C5BCA4160BE1C900436EB1 /* MotrKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MotrKit-Prefix.pch"; sourceTree = "<group>"; };
+		D1C5BCA6160BE1C900436EB1 /* MotrKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotrKit.xcdatamodel; sourceTree = "<group>"; };
+		D1C5BCA7160BE1C900436EB1 /* ZLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLAppDelegate.h; sourceTree = "<group>"; };
+		D1C5BCA8160BE1C900436EB1 /* ZLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
+		D1C5BCA9160BE1C900436EB1 /* ZLEventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventAnnotation.h; sourceTree = "<group>"; };
+		D1C5BCAA160BE1C900436EB1 /* ZLEventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventAnnotation.m; sourceTree = "<group>"; };
+		D1C5BCAB160BE1C900436EB1 /* ZLEventLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventLocation.h; sourceTree = "<group>"; };
+		D1C5BCAC160BE1C900436EB1 /* ZLEventLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocation.m; sourceTree = "<group>"; };
+		D1C5BCAD160BE1C900436EB1 /* ZLEventLocationDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLEventLocationDataController.h; sourceTree = "<group>"; };
+		D1C5BCAE160BE1C900436EB1 /* ZLEventLocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLEventLocationDataController.m; sourceTree = "<group>"; };
+		D1C5BCAF160BE1C900436EB1 /* ZLGatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGatherViewController.h; sourceTree = "<group>"; };
+		D1C5BCB0160BE1C900436EB1 /* ZLGatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGatherViewController.m; sourceTree = "<group>"; };
+		D1C5BCB1160BE1C900436EB1 /* ZLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSession.h; sourceTree = "<group>"; };
+		D1C5BCB2160BE1C900436EB1 /* ZLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSession.m; sourceTree = "<group>"; };
+		D1C5BCB3160BE1C900436EB1 /* ZLSessionDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionDataController.h; sourceTree = "<group>"; };
+		D1C5BCB4160BE1C900436EB1 /* ZLSessionDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionDataController.m; sourceTree = "<group>"; };
+		D1C5BCB5160BE1C900436EB1 /* ZLSessionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionsListViewController.h; sourceTree = "<group>"; };
+		D1C5BCB6160BE1C900436EB1 /* ZLSessionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionsListViewController.m; sourceTree = "<group>"; };
+		D1C5BCB7160BE1C900436EB1 /* ZLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSessionViewController.h; sourceTree = "<group>"; };
+		D1C5BCB8160BE1C900436EB1 /* ZLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSessionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +83,7 @@
 		D143D7AF15E332620083043C = {
 			isa = PBXGroup;
 			children = (
-				D143D7C615E332620083043C /* Wight */,
+				D1C5BC9D160BE1C900436EB1 /* Wight */,
 				D143D7BD15E332620083043C /* Frameworks */,
 				D143D7BB15E332620083043C /* Products */,
 			);
@@ -109,43 +110,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D143D7C615E332620083043C /* Wight */ = {
+		D1C5BC9D160BE1C900436EB1 /* Wight */ = {
 			isa = PBXGroup;
 			children = (
-				D143D7CF15E332620083043C /* ZLAppDelegate.h */,
-				D143D7D015E332620083043C /* ZLAppDelegate.m */,
-				D143D7D215E332620083043C /* MainStoryboard.storyboard */,
-				D143D7D515E332620083043C /* MotrKit.xcdatamodeld */,
-				D143D7C715E332620083043C /* Supporting Files */,
-				D143D7EB15E33BBC0083043C /* ZLGatherViewController.h */,
-				D143D7EC15E33BBC0083043C /* ZLGatherViewController.m */,
-				D143D7F615E408FF0083043C /* ZLEventLocation.h */,
-				D143D7F715E408FF0083043C /* ZLEventLocation.m */,
-				D143D7F915E40A250083043C /* ZLEventLocationDataController.h */,
-				D143D7FA15E40A250083043C /* ZLEventLocationDataController.m */,
-				D143D7FC15E47FBB0083043C /* ZLEventAnnotation.h */,
-				D143D7FD15E47FBB0083043C /* ZLEventAnnotation.m */,
-				D1384A9415E58A8B0046055F /* ZLSessionViewController.h */,
-				D1384A9515E58A8B0046055F /* ZLSessionViewController.m */,
-				D1384A9815E58D870046055F /* ZLSession.h */,
-				D1384A9915E58D870046055F /* ZLSession.m */,
-				D123A93615EB18720088BDAC /* ZLSessionsListViewController.h */,
-				D123A93715EB18720088BDAC /* ZLSessionsListViewController.m */,
-				D123A93A15EBD1DD0088BDAC /* ZLSessionDataController.h */,
-				D123A93B15EBD1DD0088BDAC /* ZLSessionDataController.m */,
+				D1C5BCC7160BE21800436EB1 /* Supporting */,
+				D1C5BCA0160BE1C900436EB1 /* MainStoryboard.storyboard */,
+				D1C5BCA7160BE1C900436EB1 /* ZLAppDelegate.h */,
+				D1C5BCA8160BE1C900436EB1 /* ZLAppDelegate.m */,
+				D1C5BCA9160BE1C900436EB1 /* ZLEventAnnotation.h */,
+				D1C5BCAA160BE1C900436EB1 /* ZLEventAnnotation.m */,
+				D1C5BCAB160BE1C900436EB1 /* ZLEventLocation.h */,
+				D1C5BCAC160BE1C900436EB1 /* ZLEventLocation.m */,
+				D1C5BCAD160BE1C900436EB1 /* ZLEventLocationDataController.h */,
+				D1C5BCAE160BE1C900436EB1 /* ZLEventLocationDataController.m */,
+				D1C5BCAF160BE1C900436EB1 /* ZLGatherViewController.h */,
+				D1C5BCB0160BE1C900436EB1 /* ZLGatherViewController.m */,
+				D1C5BCB1160BE1C900436EB1 /* ZLSession.h */,
+				D1C5BCB2160BE1C900436EB1 /* ZLSession.m */,
+				D1C5BCB3160BE1C900436EB1 /* ZLSessionDataController.h */,
+				D1C5BCB4160BE1C900436EB1 /* ZLSessionDataController.m */,
+				D1C5BCB5160BE1C900436EB1 /* ZLSessionsListViewController.h */,
+				D1C5BCB6160BE1C900436EB1 /* ZLSessionsListViewController.m */,
+				D1C5BCB7160BE1C900436EB1 /* ZLSessionViewController.h */,
+				D1C5BCB8160BE1C900436EB1 /* ZLSessionViewController.m */,
 			);
 			path = Wight;
 			sourceTree = "<group>";
 		};
-		D143D7C715E332620083043C /* Supporting Files */ = {
+		D1C5BCC7160BE21800436EB1 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				D143D7C815E332620083043C /* MotrKit-Info.plist */,
-				D143D7C915E332620083043C /* InfoPlist.strings */,
-				D143D7CC15E332620083043C /* main.m */,
-				D143D7CE15E332620083043C /* MotrKit-Prefix.pch */,
+				D1C5BCA2160BE1C900436EB1 /* main.m */,
+				D1C5BCA5160BE1C900436EB1 /* MotrKit.xcdatamodeld */,
+				D1C5BCA4160BE1C900436EB1 /* MotrKit-Prefix.pch */,
+				D1C5BCA3160BE1C900436EB1 /* MotrKit-Info.plist */,
+				D1C5BC9E160BE1C900436EB1 /* InfoPlist.strings */,
 			);
-			name = "Supporting Files";
+			name = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D143D7CB15E332620083043C /* InfoPlist.strings in Resources */,
-				D143D7D415E332620083043C /* MainStoryboard.storyboard in Resources */,
+				D1C5BCB9160BE1C900436EB1 /* InfoPlist.strings in Resources */,
+				D1C5BCBA160BE1C900436EB1 /* MainStoryboard.storyboard in Resources */,
+				D1C5BCBC160BE1C900436EB1 /* MotrKit-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,35 +214,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D143D7CD15E332620083043C /* main.m in Sources */,
-				D143D7D115E332620083043C /* ZLAppDelegate.m in Sources */,
-				D143D7D715E332620083043C /* MotrKit.xcdatamodeld in Sources */,
-				D143D7ED15E33BBC0083043C /* ZLGatherViewController.m in Sources */,
-				D143D7F815E408FF0083043C /* ZLEventLocation.m in Sources */,
-				D143D7FB15E40A250083043C /* ZLEventLocationDataController.m in Sources */,
-				D143D7FE15E47FBB0083043C /* ZLEventAnnotation.m in Sources */,
-				D1384A9615E58A8B0046055F /* ZLSessionViewController.m in Sources */,
-				D1384A9A15E58D870046055F /* ZLSession.m in Sources */,
-				D123A93815EB18720088BDAC /* ZLSessionsListViewController.m in Sources */,
-				D123A93C15EBD1DE0088BDAC /* ZLSessionDataController.m in Sources */,
+				D1C5BCBB160BE1C900436EB1 /* main.m in Sources */,
+				D1C5BCBD160BE1C900436EB1 /* MotrKit.xcdatamodeld in Sources */,
+				D1C5BCBE160BE1C900436EB1 /* ZLAppDelegate.m in Sources */,
+				D1C5BCBF160BE1C900436EB1 /* ZLEventAnnotation.m in Sources */,
+				D1C5BCC0160BE1C900436EB1 /* ZLEventLocation.m in Sources */,
+				D1C5BCC1160BE1C900436EB1 /* ZLEventLocationDataController.m in Sources */,
+				D1C5BCC2160BE1C900436EB1 /* ZLGatherViewController.m in Sources */,
+				D1C5BCC3160BE1C900436EB1 /* ZLSession.m in Sources */,
+				D1C5BCC4160BE1C900436EB1 /* ZLSessionDataController.m in Sources */,
+				D1C5BCC5160BE1C900436EB1 /* ZLSessionsListViewController.m in Sources */,
+				D1C5BCC6160BE1C900436EB1 /* ZLSessionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D143D7C915E332620083043C /* InfoPlist.strings */ = {
+		D1C5BC9E160BE1C900436EB1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D143D7CA15E332620083043C /* en */,
+				D1C5BC9F160BE1C900436EB1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D143D7D215E332620083043C /* MainStoryboard.storyboard */ = {
+		D1C5BCA0160BE1C900436EB1 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D143D7D315E332620083043C /* en */,
+				D1C5BCA1160BE1C900436EB1 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -343,12 +345,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D143D7D515E332620083043C /* MotrKit.xcdatamodeld */ = {
+		D1C5BCA5160BE1C900436EB1 /* MotrKit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D143D7D615E332620083043C /* MotrKit.xcdatamodel */,
+				D1C5BCA6160BE1C900436EB1 /* MotrKit.xcdatamodel */,
 			);
-			currentVersion = D143D7D615E332620083043C /* MotrKit.xcdatamodel */;
+			currentVersion = D1C5BCA6160BE1C900436EB1 /* MotrKit.xcdatamodel */;
 			path = MotrKit.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
