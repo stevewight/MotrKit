@@ -13,6 +13,10 @@
 		D143D7C515E332620083043C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7C415E332620083043C /* CoreData.framework */; };
 		D143D7EF15E33C450083043C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7EE15E33C450083043C /* MapKit.framework */; };
 		D143D7F115E33C710083043C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D143D7F015E33C710083043C /* CoreLocation.framework */; };
+		D183EC8D1625E790007E54CD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D183EC8C1625E790007E54CD /* Icon.png */; };
+		D183EC8F1625E796007E54CD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D183EC8E1625E796007E54CD /* Icon@2x.png */; };
+		D183EC921625E7B0007E54CD /* Icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = D183EC901625E7B0007E54CD /* Icon-small.png */; };
+		D183EC931625E7B0007E54CD /* Icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D183EC911625E7B0007E54CD /* Icon-small@2x.png */; };
 		D1C5BCB9160BE1C900436EB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1C5BC9E160BE1C900436EB1 /* InfoPlist.strings */; };
 		D1C5BCBA160BE1C900436EB1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C5BCA0160BE1C900436EB1 /* MainStoryboard.storyboard */; };
 		D1C5BCBB160BE1C900436EB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C5BCA2160BE1C900436EB1 /* main.m */; };
@@ -37,6 +41,10 @@
 		D143D7C415E332620083043C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D143D7EE15E33C450083043C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D143D7F015E33C710083043C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D183EC8C1625E790007E54CD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		D183EC8E1625E796007E54CD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		D183EC901625E7B0007E54CD /* Icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small.png"; path = "../Icon-small.png"; sourceTree = "<group>"; };
+		D183EC911625E7B0007E54CD /* Icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-small@2x.png"; path = "../Icon-small@2x.png"; sourceTree = "<group>"; };
 		D1C5BC9F160BE1C900436EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D1C5BCA1160BE1C900436EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D1C5BCA2160BE1C900436EB1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 		D1C5BCC7160BE21800436EB1 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				D183EC901625E7B0007E54CD /* Icon-small.png */,
+				D183EC911625E7B0007E54CD /* Icon-small@2x.png */,
+				D183EC8E1625E796007E54CD /* Icon@2x.png */,
+				D183EC8C1625E790007E54CD /* Icon.png */,
 				D1C5BCA2160BE1C900436EB1 /* main.m */,
 				D1C5BCA5160BE1C900436EB1 /* MotrKit.xcdatamodeld */,
 				D1C5BCA4160BE1C900436EB1 /* MotrKit-Prefix.pch */,
@@ -204,6 +216,10 @@
 				D1C5BCB9160BE1C900436EB1 /* InfoPlist.strings in Resources */,
 				D1C5BCBA160BE1C900436EB1 /* MainStoryboard.storyboard in Resources */,
 				D1C5BCBC160BE1C900436EB1 /* MotrKit-Info.plist in Resources */,
+				D183EC8D1625E790007E54CD /* Icon.png in Resources */,
+				D183EC8F1625E796007E54CD /* Icon@2x.png in Resources */,
+				D183EC921625E7B0007E54CD /* Icon-small.png in Resources */,
+				D183EC931625E7B0007E54CD /* Icon-small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
